@@ -1,0 +1,50 @@
+
+We are creating a separate service, this is a lead marketplace. 
+
+Lead market place is an online e-commerce that functions and provides services to these two sets of users, as well as us.
+
+First type; 
+Marketers or “sellers”
+
+Second type; 
+Buyers or consumers. 
+
+Third type; 
+Owner / super admin. 
+
+Lead marketplace is an online sass platform for marketers to sell leads to buyers. Marketers have endpoints to ingest leads into their inventory, as well as direct integrations with all major platforms such as Facebook, TikTok, google, etc. 
+
+There is all needed tools for them to manage their lead offerings as well as their store. Sales data and metrics, listings, lead weight distribution to decide what percentage of leads go to which user and when, as well as the ability to generate custom endpoints to ingest new leads with proper filed for brand, source, camp id, industry, listing id, etc
+
+The goal of the platform is to perfectly integrate with the current sms platform to allow for cross data to be shared and used. For example, if a user marks a lead as sold, dnc, contacted, etc. 
+
+The platform works as such: 
+we don’t work in dollars, we work in what’s called “Lead Reservations”. 
+
+We as an owner will allow for users to purchase Lead Reservations which will be adjustable in terms of its ratio to a dollar. 
+
+marketers integrate with us, they generate leads, we ingest them, they set a listing with a price per, and buyers subscribe to their leads. They will be real time, and 
+
+Marketers are able to generate custom reporting and match their campaigns to how well the buyers do with it. Contact rate, dnc rate, how many deals etc this stats are also made public on the sellers listings 
+
+Each seller or marketer will have a storefront listings of their offerings, as well as a listing itself which is editable, along with reviews from verified buyers. There will be company name, generation source, industry as well as the parameters that are provided per lead. 
+
+marketers are considered verified, if the leads assigned to a listing is using one of the native marketing platform integrations. 
+
+Buyers will be able to sort and search for lead providers, based on common filter types such as industry, rating, price, verified status 
+
+Buyers will use Lead Reservations to subscribe to the lead pipeline that sellers 
+Provide. Buyers can use more Lead Reservations to increase the speed and priority of their individual distribution. 
+
+As leads are generated from the assigned campaign id, adset, and ad… they are added to that listings pipeline for markers. 
+
+
+Buyers subscribe to the listing for instance: 
+
+I want 100 leads over the next week, we will provide them with a summary, you will use x lead reservations over the next week. They will need to ensure they have enough lead reservations to fund their campaign with the selected marketer. 
+
+We need to create a complete and detailed project plan for development. This will segmented by 
+
+
+
+First lets come up with an extremely well thought out and thorough plan to build this app. Once again, this app should be very highly integrated with engine. The app we have build together already. 

@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ultra-Modern SaaS Color Palette - 2024 Design Trends */
+    /* Soft neutrals with vibrant, sophisticated accents */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    
+    /* Card colors - elevated with subtle depth */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    /* Popover/Dropdown - glass morphism ready */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    /* Primary - Dark grey, close to black */
+    --primary: 0 0% 15%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Sophisticated slate */
+    --secondary: 220 13% 96%;
+    --secondary-foreground: 222 47% 11%;
+    
+    /* Muted - Refined gray scale */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    
+    /* Accent - Vibrant purple-pink gradient (inspired by Stripe, Linear) */
+    --accent: 280 85% 65%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Destructive - Modern coral-red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders - Ultra-subtle for clean separation */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    
+    /* Ring/Focus - Primary with glow */
+    --ring: 0 0% 15%;
+    
+    /* Border radius - Even more rounded for modern feel */
+    --radius: 1rem;
+    
+    /* Additional modern colors - refined palette */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+    
+    /* New gradient colors */
+    --gradient-from: 217 91% 60%;
+    --gradient-via: 280 85% 65%;
+    --gradient-to: 262 83% 58%;
+  }
+
+  .dark {
+    /* Dark mode - Professional dark theme */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 0 0% 20%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    
+    --ring: 0 0% 20%;
+    
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Ultra-modern shadow utilities with depth */
+  .shadow-soft {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-medium {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .shadow-large {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .shadow-xl-modern {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-glow-accent {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Enhanced glass morphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .dark .glass {
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  
+  /* Enhanced hover lift with scale */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-1 scale-[1.02] shadow-medium;
+  }
+  
+  /* Subtle shimmer effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  /* Modern border gradient */
+  .border-gradient {
+    border-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent))) 1;
+  }
+  
+  /* Glow effect on focus */
+  .focus-glow:focus {
+    box-shadow: 0 0 0 3px rgba(38, 38, 38, 0.1), 0 0 20px rgba(38, 38, 38, 0.2);
+  }
+  
+  /* Smooth fade in */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Refined React Flow Edge Styling */
+  .react-flow__edge-path {
+    stroke: #94a3b8;
+    stroke-width: 2.5;
+  }
+  
+  .react-flow__edge.selected .react-flow__edge-path {
+    stroke: #262626;
+    stroke-width: 3;
+  }
+  
+  .react-flow__connection-line {
+    stroke: #94a3b8;
+    stroke-width: 2.5;
+  }
+  
+  .react-flow__edge-text {
+    font-weight: 500;
+    font-size: 11px;
+    fill: #64748b;
+  }
+}
+

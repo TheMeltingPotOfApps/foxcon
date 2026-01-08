@@ -1,0 +1,9 @@
+export enum CallSessionStatus {
+  INITIATED = 'INITIATED',
+  RINGING = 'RINGING',
+  CONNECTED = 'CONNECTED',
+  ON_HOLD = 'ON_HOLD',
+  TRANSFERRING = 'TRANSFERRING',
+  ENDED = 'ENDED',
+}
+

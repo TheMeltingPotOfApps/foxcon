@@ -1,0 +1,10 @@
+export enum AgentActivityType {
+  STATUS_CHANGE = 'STATUS_CHANGE',
+  CALL_STARTED = 'CALL_STARTED',
+  CALL_ENDED = 'CALL_ENDED',
+  LOGIN = 'LOGIN',
+  LOGOUT = 'LOGOUT',
+  PAUSE = 'PAUSE',
+  RESUME = 'RESUME',
+}
+
